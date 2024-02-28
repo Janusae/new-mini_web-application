@@ -10,9 +10,10 @@
 <h2>And the price is {{ data.price }}</h2>
 <a href=""><button>Add to favorite</button></a>
 <hr style="width: 500px">
-<h1>Comments: </h1>
+<h1>Number of comments is :  {{ number }}</h1>
+<h2>Comments: </h2>
 {% for f in forms %}
-<h3>{{ f.name }} [ {{ f.email }} ] : </h3>
+<h3>{{ f.id }}.{{ f.name }} [ {{ f.email }} ] : </h3>
     <h3>        {{ f.message }}</h3>
     <br>
     <hr>
