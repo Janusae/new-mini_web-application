@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail page</title>
+</head>
+<body style="background-color: black">
+<header>{{ data.title }}</header>
+<h1>{{ data.name }}</h1>
+<h2>And the price is {{ data.price }}</h2>
+<a href=""><button>Add to favorite</button></a>
+<hr style="width: 500px">
+<h1>Comments: </h1>
+{% for f in forms %}
+<h3>{{ f.name }} [ {{ f.email }} ] : </h3>
+    <h3>        {{ f.message }}</h3>
+    <br>
+    <hr>
+{% endfor %}
+
+</body>
+</html>

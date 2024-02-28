@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+</head>
+<body style="background-color: black">
+<h1>You can add a product by using the form blow : </h1>
+<form action="" method="post">
+{% csrf_token %}
+<ul></ul>
+    {% for d in form %}
+    <li>{{ d }}</li>
+        <br>
+    {% endfor %}
+
+
+<button> Send </button>
+</form>
+</body>
+</html>

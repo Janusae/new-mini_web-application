@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+</head>
+<body style="background-color: black">
+<header style="text-align: center">Welcome to my website</header>
+<ul style="text-align: center">
+    <a href="{% url "list_products" %}"><li>List Of Products</li></a>
+    <br>
+    <a href="{% url "contact" %}"><li>Contact Us</li></a>
+    <br>
+    <a href="{% url "add_products" %}"><li>Add Post</li></a>
+    <br>
+    <a href="{% url "contact" %}"><li>Send comment</li></a>
+</ul>
+</body>
+</html>
